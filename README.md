@@ -1,6 +1,6 @@
 # gist-rs Scoop bucket
 
-Manifest-only bucket for gist-rs binaries. Source-free by policy: every
+Manifest-only bucket for the riir-ai binaries. Source-free by policy: every
 manifest installs a **prebuilt release binary** — no source is published
 here.
 
