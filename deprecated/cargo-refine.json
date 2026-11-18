@@ -15,11 +15,15 @@
         "github": "https://github.com/riir-ai/cargo-refine"
     },
     "autoupdate": {
-        "url": "https://github.com/riir-ai/cargo-refine/releases/download/$version/cargo-refine-$version-x86_64-pc-windows-gnu.zip"
+        "url": "https://github.com/riir-ai/cargo-refine/releases/download/v$version/cargo-refine-v$version-x86_64-pc-windows-gnu.zip",
+        "hash": {
+            "url": "https://github.com/riir-ai/cargo-refine/releases/download/v$version/SHA256SUMS",
+            "find": "([a-fA-F0-9]{64})\\s+cargo-refine-v$version-x86_64-pc-windows-gnu\\.zip"
+        }
     },
     "notes": [
         "DEPRECATED: renamed to riir-refine. Run: scoop uninstall cargo-refine; scoop install riir-ai/riir-refine",
-        "Also on crates.io: cargo install cargo-refine (MIT) builds the code-fixing lane from source.",
+        "Also on crates.io: cargo install riir-refine (MIT) builds the code-fixing lane from source.",
         "This prebuilt binary additionally carries the hosted contribution surface (cargo refine join, the leaderboard, latent retrieval)."
     ]
 }
