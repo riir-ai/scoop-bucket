@@ -8,7 +8,7 @@ here.
 
 ```powershell
 scoop bucket add riir-ai https://github.com/riir-ai/scoop-bucket
-scoop install cargo-refine   # the `cargo refine` lint healer
+scoop install riir-refine   # the `cargo refine` lint healer
 scoop install riir-reflex    # the `reflex` modelless decision engine
 ```
 

@@ -1,0 +1,25 @@
+{
+    "version": "0.5.0",
+    "description": "Refine - the code fixer that learns: clippy, rust perf, docker and rustc-error fixes for Rust crates",
+    "homepage": "https://refine.riir.ai",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/riir-ai/cargo-refine/releases/download/v0.5.0/cargo-refine-v0.5.0-x86_64-pc-windows-gnu.zip",
+            "hash": "4f9c21145540d987b870ff98288e2dae47efbd3406ebdfb8060d73ab3c85da56"
+        }
+    },
+    "bin": [
+        "cargo-refine.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/riir-ai/cargo-refine"
+    },
+    "autoupdate": {
+        "url": "https://github.com/riir-ai/cargo-refine/releases/download/$version/cargo-refine-$version-x86_64-pc-windows-gnu.zip"
+    },
+    "notes": [
+        "DEPRECATED: renamed to riir-refine. Run: scoop uninstall cargo-refine; scoop install riir-ai/riir-refine",
+        "Also on crates.io: cargo install cargo-refine (MIT) builds the code-fixing lane from source.",
+        "This prebuilt binary additionally carries the hosted contribution surface (cargo refine join, the leaderboard, latent retrieval)."
+    ]
+}
